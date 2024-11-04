@@ -1,0 +1,11 @@
+# invertor (type 2)
+
+# Configuration
+prefix_lenght 5
+suffix_lenght 5
+null_symbol *
+
+tape 000111000
+com q1 0 q1 1 L
+com q1 1 q1 0 L
+com q1 * q0 * R

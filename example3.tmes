@@ -1,0 +1,17 @@
+# simple summ
+
+# Configuration
+prefix_lenght 20
+suffix_lenght 20
+null_symbol #
+
+tape 111*1111
+com q1 # q1 # L
+com q1 1 q2 # L
+com q1 * q0 #
+com q2 # q3 1 R
+com q2 1 q2 1 L
+com q2 * q2 * L
+com q3 # q1 # L
+com q3 1 q3 1 R
+com q3 * q3 * R 

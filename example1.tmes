@@ -1,0 +1,16 @@
+# The example "inverter" program, which replaces 1 with 0 and vice versa
+# Written by KevinDev64(kevindev56@yandex.ru)
+
+# Configuration
+null_symbol #
+prefix_lenght 10
+suffix_lenght 5
+start_pos 1
+
+# Tape
+tape 000111000
+
+# Commands
+com q1 0 q1 1 R
+com q1 1 q1 0 R
+com q1 # q0 #   
