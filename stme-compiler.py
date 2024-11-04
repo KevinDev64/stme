@@ -63,6 +63,10 @@ for command in commands:
     states.add(command[0])
     states.add(command[2])
 
+output_file_path = (args.input_file).replace('.tmes', '.tmeo')
+output_file = open(output_file_path, 'w')
+output_file.write(''.join(tape) + '\n')
+
 # steps = 0 #TODO
 while current_state != end_state:
     # steps += 1
@@ -77,7 +81,9 @@ while current_state != end_state:
         current_pos += 1
     if current_command[4] == 'C':
         pass
-
+    output_file.write(''.join(tape) + '\n')
     # print('Current Program Step ->', steps, end='\r') 
+output_file.write("SUCCESS!\n")
+output_file.close()
 print('The program was completed successfully!')
 print((''.join(tape)).replace(null_symbol, ''))
