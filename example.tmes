@@ -1,6 +1,0 @@
-# The example "inverter" program, which replaces 1 with 0 and vice versa
-start_pos 0
-tape 111000111
-com q1 0 q1 1 R
-com q1 1 q1 0 R
-com q1 # q0 #
